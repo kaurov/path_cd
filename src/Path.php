@@ -4,19 +4,19 @@ declare(strict_types = 1);
 
 /**
  * Write a class with methods that provides change directory (cd) function for an abstract file system.
-Notes:
-* Root path is '/'.
-* Path separator is '/'.
-* Parent directory is addressable as '..'.
-* Directory names consist only of English alphabet letters (A-Z and a-z).
-* The function should support both relative and absolute paths.
-* The function will not be passed any invalid paths.
-* Do not use built-in path-related functions.
-For example:
-$path = new Path('/a/b/c/d');
-$path->cd('../x')
-echo $path->getCurrentPath();
-should display '/a/b/c/x'.
+ * Notes:
+ * * Root path is '/'.
+ * * Path separator is '/'.
+ * * Parent directory is addressable as '..'.
+ * * Directory names consist only of English alphabet letters (A-Z and a-z).
+ * * The function should support both relative and absolute paths.
+ * * The function will not be passed any invalid paths.
+ * * Do not use built-in path-related functions.
+ * For example:
+ * $path = new Path('/a/b/c/d');
+ * $path->cd('../x')
+ * echo $path->getCurrentPath();
+ * should display '/a/b/c/x'.
  */
 class Path
 {
